@@ -229,6 +229,8 @@ async def run_quant_engine(mode: str = "paper", duration_seconds: int = 600, rou
                         candidate_payload = {
                             "symbol": state["dex"],
                             "mint": mint,
+                            "buy_dex": b_label,
+                            "sell_dex": s_label,
                             "direction": direction_str,
                             "optimal_borrow_sol": borrow_sol,
                             "expected_net_sol": net_sol,
